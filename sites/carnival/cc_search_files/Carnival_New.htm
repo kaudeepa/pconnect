@@ -1,0 +1,93 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="IE=8" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title></title>
+    <style type="text/css">
+        .page { color: #555555; font-family: Arial,Helvetica,sans-serif; font-size: 12px; padding-bottom: 0; padding-top: 0; width: 964px; }
+        .error-box { position: absolute; color: #EA243A; font-family: Calibri,Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: bold; margin-left: 36px; margin-top: -200px; position: absolute; width: 300px; height: 50px; }
+        .search-box { position: absolute; color: #124C8C; font-family: Calibri,Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-weight: bold; margin-left: 36px; margin-top: -152px; position: absolute; width: 300px; height: 50px; }
+    </style>
+    <script type="text/javascript" src="/CMS/javascript/jquery-1.4.2.min.js"></script>
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="/CMS/Header2009/css/ie.css" media="screen"/><![endif]-->
+    <!--[if IE 6]>
+        <script type="text/javascript" src="/cms/Header2009/js/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script type="text/javascript">
+          DD_belatedPNG.fix('.col1-wrap, img');
+        </script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="/cms/pageelements/2010/new-header/css/ie7.css" />
+    <![endif]-->
+   <link href="/common/Global/Home/css/ccl.header.css" rel="stylesheet" type="text/css" />
+    <link href="/common/Global/Home/css/ccl.footer.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.carnival.com/CMS/Search2/common/css/thickbox.css" type="text/css" rel="Stylesheet" />
+
+  <script src="/common/cclus/js/header/Carnival.Globals.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/common/CCLUS/js/footer/jquery.cookie.js"></script>
+      <script src="/bookingengine/common/scripts/plugins/jquery_query-2_1_5_.js" type="text/javascript"></script>
+  <script src="/bookingengine/common/scripts/plugins/jquery.validate.min.js" type="text/javascript"></script>
+     
+   
+    <script src="/cms/Javascript/mbox.js" type="text/javascript" language="JavaScript"></script>
+    <script type="text/javascript" src="/CMS/Search2/common/js/thickboxMin.js"></script>
+    <script type="text/javascript" src="/common/CCLUS/js/footer/jquery.ccltooltip.js"></script>
+    <script type="text/javascript" src="/common/cclus/js/header/quicksearchheader.js"></script>
+     
+    <script src="/common/cclus/htmlfragments/Error/js/error.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <div id="headerplaceholder">
+        </div>
+        <div id="contentplaceholder">
+            <table cellspacing="0" cellpadding="0" border="0" id="mainTbl" align="center">
+                <tr>
+                    <td valign="top">
+                        <div id="body">
+                            <div class="col-body">
+                                <div class="banner err404">
+                                    <img height="322" width="953" alt="How did you get here? We're sorry, the page you're looking for could no be found." src="/~/media/CCLUS/Images/Core/Errors/404Pagesredfrogfinalblankjpg.ashx">
+                                    <div class="error-box">
+                                        We're sorry the page you're looking for cannot be found.
+                                    </div>
+                                    <div class="search-box">
+                                        There may be a mis-spelling in the URL entered, or the page may no longer exist.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footerplaceholder">
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    tb_init('img.thickbox');
+</script>
+<script type="text/javascript">
+    function showclickToCallEstara() {
+        var lsURL;
+        lsURL = "/CMS/ClickToCall/ClickToCall_Estara.html?Page=" + window.parent.document.title + "&From=" + window.parent.document.location.pathname + "&icid=BEClickToCall";
+        lsURL = lsURL + "&KeepThis=true&TB_iframe=true&width=425&height=400";
+        tb_show("", lsURL, null);
+
+        try {
+            $('#TB_iframeContent').each(function () {
+                if ($(this).attr('src').indexOf('/CMS/ClickToCall/ClickToCall_Estara.html') != -1) {
+                    $(this).siblings("#TB_title").css('visibility', 'visible');
+                    $(this).parent('.TD_container').css('background-color', '#fff');
+                }
+            });
+        }
+        catch (aoXcp) {
+            // Do nothing
+        }
+    }
+</script>
+ 

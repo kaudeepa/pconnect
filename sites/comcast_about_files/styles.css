@@ -1,0 +1,540 @@
+/* CSS Document */
+@font-face {
+    font-family: 'FuturaLtBtLight';
+    src: url('../font/FutuLt__.eot');
+    src: url('../font/FutuLt__.eot?#iefix') format('embedded-opentype'),
+         url('../font/FutuLt__.woff') format('woff'),
+         url('../font/FutuLt__.ttf') format('truetype'),
+         url('../font/FutuLt__.svg#FuturaLtBtRight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FuturaBkBt';
+    src: url('../font/FutuBk__.eot');
+    src: url('../font/FutuBk__.eot?#iefix') format('embedded-opentype'),
+         url('../font/FutuBk__.woff') format('woff'),
+         url('../font/FutuBk__.ttf') format('truetype'),
+         url('../font/FutuBk__.svg#FuturaBkBt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FuturaMdBt';
+    src: url('../font/FuturaMdBt.eot');
+    src: url('../font/FuturaMdBt.eot?#iefix') format('embedded-opentype'),
+         url('../font/FuturaMdBt.woff') format('woff'),
+         url('../font/FuturaMdBt.ttf') format('truetype'),
+         url('../font/FuturaMdBt.svg#FuturaMdBt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+img {
+	border:none;
+}
+
+
+.textinput
+{
+    background: url("../images/textboxbg.gif") no-repeat scroll left top transparent;
+    border: 1px solid #C3C3C3;
+    padding: 2px;
+}
+
+.body2
+{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;    
+    background-repeat: repeat-x;
+    background-color: #e3e3e3;
+}
+.tfn
+{
+    color: #f56620;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.tfn span
+{
+        font-size: 22px;
+    
+    }
+.navigationUI2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+
+
+.navigationUI2 a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navigationUI2 a:hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #c63b1f;
+    text-decoration: none;
+}
+
+.greypipe
+{
+    font-size: 11px;
+    color: #c0c0c0;
+}
+.style5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.style7
+{
+    font-size: 13px;
+}
+
+
+.content-text ul
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-text li
+{
+	font-size:12px;
+	padding-bottom:14px;
+	line-height:16px;
+	width:190px;
+	background: url(../images/bullet.png) no-repeat left top;
+	padding-left: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.serviceheading
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.serviceheading2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+.footertextUI2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #767676;
+    font-size: 11px;
+    width: 550px;
+}
+.tfn1
+{
+    font-size: 14px;
+}
+.tfn3
+{
+    color: #cf0015;
+}
+.protext
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 12px;
+}
+
+.example1 a
+{
+    position: relative;
+    z-index: 4000;
+}
+/* set stacking context*/
+.example1 a span
+{
+    visibility: hidden; /* hide message initially*/
+    position: absolute;
+    top: -170px;
+    left: -535px;
+    width: 540px;
+    z-index: -4000;
+}
+.example1 a:hover
+{
+    visibility: visible;
+    z-index: 4000;
+}
+/* ie bug needed to make span show*/
+.example1 a:hover span
+{
+    visibility: visible;
+    z-index: 4000;
+}
+
+.link
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+
+.link a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.link a:hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #c63b1f;
+    text-decoration: none;
+}
+
+.head-dmc
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+.txt-dmc
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.sitemap-txt
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    float: left;
+}
+.sitemap-txt a
+{
+    float: left;
+    line-height: 15px;
+    width: 200px;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.bread-crumb a
+{
+    width: auto;
+    float: none;
+    display: inline;
+}
+.bread-crumb
+{
+    text-align: center;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    width: 100%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.price
+{
+    color: Red;
+}
+
+/* Code Commented By [Muhammad Faraz] - [2012-07-31]  
+
+#geolinkholder a { color:#000; font-family: Arial; font-size:12px; margin-left: 0px; }
+#geolinkholder a:hover { text-decoration:none; color:#C63B1F; }
+
+/*
+
+/* Code Added By [Muhammad Faraz] - [2012-07-31]  */
+
+#geolinkholder
+{
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    width: 700px;
+}
+
+
+#geolinkholder a  
+{
+    display: block;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+}
+#geolinkholder a:hover 
+{ 
+    text-decoration:none; color:#C63B1F; 
+}
+
+
+/*========================================================*/
+/*  jQuery Slider                                         */
+/*========================================================*/
+
+
+.banner {
+	background:url(../images/banner-bg.png) no-repeat;
+	height:355px;
+}
+div.wrap {
+	/*width : 993px;*/
+	width : 543px;
+	margin : 0 auto;
+	text-align : left;
+}
+div#top div#nav {
+	float : left;
+	clear : both;
+	width : 993px;
+	height : 52px;
+	margin : 22px 0 0;
+}
+div#top div#nav ul {
+	float : left;
+	width : 700px;
+	height : 52px;
+	list-style-type : none;
+}
+div#nav ul li {
+	float : left;
+	height : 52px;
+}
+div#nav ul li a {
+	border : 0;
+	height : 52px;
+	display : block;
+	line-height : 52px;
+	text-indent : -9999px;
+}
+div#header {
+/*margin : -1px 0 0;*/
+}
+div#video-header {
+	height : 683px;
+	margin : -1px 0 0;
+}
+div#header div.wrap {
+	height : 161px;
+	background : url(../images/header-bg.png) no-repeat 50% 0;
+}
+div#header div#slide-holder {
+	z-index : 40;
+	width : 543px;
+	height : 363px;
+	position : absolute;
+}
+div#header div#slide-holder div#slide-runner {
+	height: 356px;
+	overflow: hidden;
+	position: absolute;
+	width: 543px;
+	/*top: -2px;*/
+}
+div#header div#slide-holder img {
+	margin : 0;
+	display : none;
+	position : absolute;
+}
+div#header div#slide-holder div#slide-controls {
+	top: 0px;
+	display: none;
+	height: 45px;
+	position: absolute;
+	left:0;
+}
+div#header div#slide-holder div#slide-controls p.text {
+	float : left;
+	color : #fff;
+	display : inline;
+	font-size : 10px;
+	line-height : 16px;
+	margin : 0px 0 0 20px;
+	text-transform : uppercase;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav {
+    height: 97px;
+    margin-left: 21px;
+    margin-top: 24px;
+    width: 543px;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: 'FuturaBkBt';
+    font-size: 17px;
+    margin-right: 54px;
+    padding: 15px 6px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a.on {
+	color:#e61824;
+	text-decoration:none;
+	background:url("../images/slide-hover.png") no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+.x-home {
+    margin-left: 15px;
+}
+
+.x-home h1 {
+	margin:0;
+}
+.x-home-txt {
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: 415px;
+}
+.x-home-txt h2 {
+	color:#dd1f27;
+	font-size:15px;
+	font-weight:bold;
+	margin:0;
+	padding-top: 15px;
+}
+.x-home-txt p {
+    background: url("../images/bullet-p.png") no-repeat scroll left top transparent;
+    color: #333333;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 20px 0 0;
+    padding-left: 18px;
+}
+.x-home-txt span {
+	color:#dd1f27;
+	text-decoration:underline;
+}
+.red {
+	color:#dd1f27;
+	text-decoration:none !important;
+}
+.xh-video {
+	float:right;
+	width:260px;
+	margin:0;
+}
+
+a.lightbox { background:url(../images/xh-video.png) no-repeat 0 0; width:249px; height:218px; display:block; cursor:pointer;}
+a.lightbox:hover { background-position:bottom;}
+
+
+/*========================================================*/
+/*  Accordion Start                                       */
+/*========================================================*/
+
+/*.fixedHeight {
+	height:235px;
+}*/
+
+.faqs {
+	background:url(../images/faqs-bg.png) repeat-y;
+	padding: 0 30px 50px 20px;
+	font-family:Arial, Helvetica, sans-serif;
+	width:690px;
+}
+
+.faqs h1, .faqs h2, .faqs p { margin:0}
+
+.faqs h1 {
+    background: url("../images/faqs-bb.png") repeat-x scroll center bottom transparent;
+    color: #E00021;
+    font-size: 26px;
+    font-weight: normal;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+
+.faqs h2 {
+    color: #F56620;
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 14px;
+    padding-top: 22px;
+    text-transform: uppercase;
+}
+.accordion, .accordion-2, .accordion-3 {
+    border: 1px solid #E097A2;
+    box-shadow: 0 0 2px #E097A2;
+    width: 700px;
+}
+.accordion span.qs, .accordion-2 span.qs, .accordion-3 span.qs {
+    background: url("../images/plus-minus.png") no-repeat scroll right -47px #FFFFFF;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 15px;
+}
+.accordion span.qs:hover, .accordion-2 span.qs:hover, .accordion-3 span.qs:hover {
+	background-color: #f5f5f5;
+}
+.accordion span.qs.active, .accordion-2 span.qs.active, .accordion-3 span.qs.active {
+	background-position: right 5px;
+}
+.accordion p, .accordion-2 p, .accordion-3 p {
+	background: #efefef;
+	margin: 0;
+	padding: 10px 15px 13px;
+	line-height:21px;
+	font-size:12px;
+	color:#000;
+	border-bottom: solid 1px #e6e6e6;
+	border-top: solid 1px #fff;
+}
+.bb-none {
+	border-bottom:none !important;
+}
+.accordion span.qs span.bold, .accordion p span.bold {
+	color:#1d65a1;
+}
+
+/*========================================================*/
+/*  Accordion End                                         */
+/*========================================================*/

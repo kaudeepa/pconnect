@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Carnival</title>
+<style type="text/css">
+	html {overflow:hidden;}
+	#loader { margin-left: 50px; margin-top: 30px;}
+	#signup{margin-top:-10px; padding:0;}
+	#signup input.email {
+    background: url("/common/global/home/css/img/bg/input-bg.png") repeat-x scroll 0 bottom #FFFFFF;
+    border: 3px solid #ADD1E4;
+    border-radius: 14px 14px 14px 14px;
+    color: #0065C9;
+    font: bold 11px/23px arial,helvetica,sans-serif;
+    height: 23px;
+    margin-bottom: 10px;
+    padding: 0 12px;
+    position: relative;
+    width: 190px;
+}
+#signup input.subscribe
+{
+   color:#0065C9;
+    background: url("/common/global/home/css/img/btn/subscribe.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF !important;
+    display: block;
+    font: 11px/18px tempo;
+    height: 21px;
+    text-align: center;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    vertical-align: middle;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    width:98px;
+    border:0;
+    }
+    #signup .title
+    {
+        color: #171717;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-family:arial,helvetica,sans-serif;
+    }
+    
+   #signup .text
+   {
+    color: #4E5872;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 7px;
+    font-family:arial,helvetica,sans-serif;
+    }
+    
+</style>
+
+<!--[if lte IE 8]>
+    <style type="text/css">
+    #signup{margin-top:-3px !important;}
+    #email{margin-top:-2px !important;}
+</style>
+<![endif]-->
+
+<!--<link rel="stylesheet" type="text/css" href="/cms/pageelements/2010/new-footer/css/footer.css">-->
+ <script type="text/javascript" src="cc_welcome_files/jquery-1.js"></script>
+<script type="text/javascript" src="signup-form_data/s_code.js"></script>
+<!--[if IE]>
+    <script src="/common/CCLUS/js/PIE.js" type="text/javascript"></script>
+
+<style type="text/css">
+    #signup {margin-top: -3px !important;}
+</style>
+ 
+<![endif]-->
+
+<script type="text/javascript">
+    $(function () {
+        if (window.PIE) {
+            $('#email').each(function () {
+                PIE.attach(this);
+            });
+        }
+    });
+</script>
+</head>
+
+<body>
+<div id="signup">
+<span class="title">Never Miss a Deal</span>
+<span class="text">Subscribe for special offers:</span>
+    <form id="emailOnlyForm" action="http://ebm.cheetahmail.com/r/regf2" method="POST" name="Email Only" onsubmit="return false;">
+        <div style="vertical-align: top;">
+            <input name="n" value="602" type="hidden">
+            <input name="o" value="1" type="hidden">
+            <input name="a" value="1" type="hidden">
+            <input name="re" value="http://carnivalprojects.arn.com/leadnurturing1-5/shadowbox_new/signup-form/footer-thanks.htm" type="hidden">
+            <input name="aid" value="982238741" type="hidden">
+            <input name="VERSION" value="E" type="hidden">
+            <input name="SOURCE" value="CARNIVAL" type="hidden">
+            <input name="SUB_SOURCE" value="FOOTER SIGNUP" type="hidden">
+        <input class="email" id="email" name="EMAIL" value="Enter your E-mail Address" onfocus="if(this.value=='Enter your E-mail Address'){this.value=''}" onblur="if(this.value==''){this.value='Enter your E-mail Address'}" type="text">
+        <input class="subscribe" id="submit" value="" type="button">
+        </div>
+    </form>
+
+</div>
+<div style="display: none;" id="loader">
+  <img id="imgloading" src="signup-form_data/ajax_loader_white.gif" alt="Loading...">
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#loader').hide();
+
+
+        $("#email").bind("keypress", function (event) {
+
+            if (event.keyCode == 13) {
+                $('#submit').click();
+                event.stopPropagation();
+                event.preventDefault();
+
+            }
+
+        });
+
+        $("#submit").click(function () {
+
+            if (isValidEmailSyntax()) {
+
+                //set IsTowerDataServiceOn to true/false to turn on/off TowerData validation services.
+                var IsTowerDataServiceOn = false;
+
+                if (IsTowerDataServiceOn)
+                    TowerDataValidationService();
+                else
+                    SignupForm();
+
+            } else {
+                alert('Please provide a valid email address');
+            }
+
+
+
+        });
+
+    });
+
+   
+
+    function isValidEmailSyntax() {
+        var lsEmail = $.trim(document.forms[0].EMAIL.value);
+        var lsFilter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+
+        return lsFilter.test(lsEmail);
+    }
+
+    function isEmpty(asValue) {
+        return (asValue == "");
+    }
+
+    function SignupForm() {
+        var email = $.trim(document.forms[0].EMAIL.value);
+     
+        parent.top.tb2_show(null, "/common/global/home/htmlfragments/signup-lightbox.html?KeepThis=true&amp;TB2_iframe=true&amp;height=685&amp;width=692", false);
+
+        parent.top.document.cookie = 'ccl_signup_form_email=' + email;
+        if (parent.top.$('.btn-email-submit').length > 0) {
+            parent.top.$('.btn-email-submit').parent().html('<span style="font-weight: bold; font-size: 11px; color: #0065C9;">Thank you for signing up!</span>');
+        }
+        $("#emailOnlyForm").submit();
+        location.href = $("input[name='re']").val();
+        var url = parent.top.location.href.toLowerCase();
+        var s = s_gi("carnivalprod");
+        s.linkTrackVars = 'events,prop38,prop39';
+        s.linkTrackEvents = 'event20';
+        s.events = 'event20';
+        if (url.indexOf("ships/carnival_magic") != -1) {
+            s.prop38 = "Magic";
+        } else if (url.indexOf("fun/brochure") != -1) {
+            s.prop38 = "eBrochure";
+        } else if (url.indexOf("cruise_control/first_time_cruiser") != -1) {
+            s.prop38 = "FirstTimer";
+        } else {
+            s.prop38 = 'Homepage tile';
+        }
+        s.prop39 = email;
+        s.tl(this, 'o', 'Email Quick Signup');
+      
+
+        if ((window.location.href).toLowerCase().indexOf('prodpreview.carnival.com') != -1) {
+            alert(s.linkTrackVars + " :: " + s.linkTrackEvents + " :: " + s.events);
+        }
+
+    }
+
+    function TowerDataValidationService() {
+        var email = $.trim(document.forms[0].EMAIL.value);
+
+        $('#loader').show();
+        $('#signup').hide();
+
+        $.ajax(
+            {
+                cache: false,
+                type: "GET",
+                url: '/BookingEngine/TowerData/ValidateEmail',
+                data: { email: email, vlevel: 4 },
+                success: function (obj) {
+
+                    $('#loader').hide();
+                    $('#signup').show();
+
+                    if (obj.Valid) {
+                        SignupForm();
+                    } else {
+
+                        if (obj.Error) {
+                            alert(obj.Message);
+                        } else {
+                            alert('Please provide a valid email address. ' + obj.Message);
+                        }
+                    }
+                }
+            });
+    }
+
+</script>
+
+     <script type="text/javascript">
+         var __source = "CARNIVAL";
+     </script>
+    
+
+
+</body></html>

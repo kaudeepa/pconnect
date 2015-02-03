@@ -1,0 +1,39 @@
+1. Command to create database.
+CREATE DATABASE `cc`;
+
+2. Command to create fields_metadata table;
+'CREATE TABLE `fields_metadata` (
+  `unique_id` varchar(50) COLLATE utf8_bin NOT NULL,
+  `id` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+  `html` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  `value` varchar(200) COLLATE utf8_bin DEFAULT NULL,
+  `page_url` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `default_value` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`unique_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin';
+
+
+3. Command to create fields_useractivity table.
+'fields_useractivity', 'CREATE TABLE `fields_useractivity` (
+  `unique_id` varchar(50) COLLATE utf8_bin NOT NULL,
+  `id` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+  `html` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  `value` varchar(200) COLLATE utf8_bin DEFAULT NULL,
+  `page_url` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  `session_id` varchar(250) COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `default_value` varchar(200) COLLATE utf8_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin';
+
+
+4. Command to create user_metadata.
+'user_metadata', 'CREATE TABLE `user_metadata` (
+  `page_url` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  `session_id` varchar(250) COLLATE utf8_bin NOT NULL DEFAULT '''',
+  `browser` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`session_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin';
+

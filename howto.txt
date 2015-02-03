@@ -1,0 +1,63 @@
+***************
+Components
+***************
+
+This application has 3 parts. 
+
+1. PHP backend code is based on Slim Rest API framework.
+
+Location: pros_connect/api
+
+
+2. Jquery Javascript based front end code. is at the following locations.
+	pros_connect/config - Configurator
+	pros_connect/track  - tracking module
+	pros_connect/js	    - jquery library
+	sites 		    - all local testing websites are kept here.
+	css 		    - styling of web-page (not used currently)
+	report		    - reporting code will be hosted here. Currently part of code   	which enables "click to call" is merged with tracking code i.e. pros_cc.js
+
+3. Mysql database - Instructions to setup MySql DB is in Settingup_Database.txt file.
+
+Following should be the credentials while setting up db username and password.
+
+database name - cc
+database user - root
+database password - root
+
+Alternatively, we can modify following entries in pros_connect/api/index.php file to reflect our credentials.
+	
+$dbhost="127.0.0.1";
+	
+$dbuser="root";
+	
+$dbpass="root";
+$dbname="cc";
+
+
+***************
+Setting up.
+***************
+1. Install XAMPP on your PC. Installer is provided in the Dropbox folder.
+
+2. It will create structure similar to 
+C:/xampp/htdocs/ 
+
+on your local computer. Path will vary according to your install directory.
+
+
+3. Pick pros_connect folder from dropbox and put it in htdocs directory.
+
+
+4. Start MySQL and Apache service from XAMPP control panel.
+
+
+5. Follow instructions in Settingup_Database.txt to prepare MySQL database.
+
+
+6. Open your browser and try to access following URL.
+
+localhost/pros_connect/config/config.htm (Configurator tool)
+
+
+If you able to access this page We are all setup correct !

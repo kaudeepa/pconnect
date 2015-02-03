@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Configurator</title>
+<style type="text/css">
+.highlight {
+	border-style:solid;
+	border-color:red;
+}
+</style>
+</head>
+<body>
+<p id ="configContent">
+Page URL:&nbsp;
+<input id="pageurl" name="pageurl" size="55" type="text" />
+<input id="clickme" type="button" value="Fetch Page" />
+<input id="highlightFields" type="button" value="Select Fields" />
+<input id="submitvalue" type="button" value="Track Fields" />
+</p>
+<br/><br/>
+<div id ="pageContent" style="border: thin dashed red">
+</div>
+<script src="./../js/jquery-1.7.1.min.js"></script>
+<script src="config.js"></script>
+</body>
+</html>
