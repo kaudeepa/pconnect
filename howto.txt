@@ -38,7 +38,7 @@ $dbname="cc";
 ***************
 Setting up.
 ***************
-1. Install XAMPP on your PC. Installer is provided in the Dropbox folder.
+1. Install XAMPP on your PC/Mac. Installer is provided in the Dropbox folder.
 
 2. It will create structure similar to 
 C:/xampp/htdocs/ 
